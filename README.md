@@ -1,6 +1,7 @@
--Java-
+# Java
 
 * Exercicios de aula
 * Herança
-* Daos
-# Atualizando...# 
+* Daos 
+
+Atualizando...
