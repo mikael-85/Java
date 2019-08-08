@@ -10,7 +10,7 @@ public class MenuConta {
 	
 	public void menuConta() {
 		 
-		int opcao = -1, opcao2= -1; 
+		int opcao = -1;	//, opcao2= -1; 
 		while(opcao != 0) {
 			//opcao = -1;
 			System.out.println();
