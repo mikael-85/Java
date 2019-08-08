@@ -4,7 +4,7 @@ public class Conta {
 	private double saldo;
 	private int numeroAgencia;
 	private int numeroConta;
-	//private String nomeConta;
+	private String nomeConta;
 
 	public void setSaldo(double aSaldo) {  //saldo 
 		saldo = aSaldo; // this.saldo = saldo
@@ -30,13 +30,13 @@ public class Conta {
 		this.numeroConta = numeroConta;
 	}
 
-	/*public String getNomeConta() {
+	public String getNomeConta() {
 		return nomeConta;
 	}
 
 	public void setNomeConta(String nomeConta) {
 		this.nomeConta = nomeConta;
-	}*/
+	}
 
 	void deposita(double valor) {
 		this.saldo += valor; 
@@ -46,9 +46,15 @@ public class Conta {
 		this.saldo -= valorSaque;
 	}
 	
+	void transfere(Conta deposita, double valor) {
+		deposita.setSaldo(deposita.getSaldo() + valor);
+		this.saldo -= valor;
+		System.out.println("Saldo da conta depositada: " +deposita.getSaldo()+ " saldo da conta depositaria: "+ this.getSaldo());
+	}
+	
 	void displayConta(){
 		System.out.println();
-		System.out.println("Agencia..: " +this.getNumeroAgencia()+ " Numero..:" +this.getNumeroConta()+ 
+		System.out.println(this.getNomeConta() +", Agencia..: " +this.getNumeroAgencia()+ " Numero..:" +this.getNumeroConta()+ 
 				" Saldo..: "+this.getSaldo());
 	}
 

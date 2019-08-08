@@ -20,6 +20,8 @@ public class MenuConta {
 			System.out.println("3 - Sacar");
 			System.out.println("4 - Ver Saldo");
 			System.out.println("5 - Informacao Geral da conta");
+			System.out.println("6 - Transferencia entre conta 1 e conta 2");
+			System.out.println("7 - Transferencia entre conta 2 e conta 1");
 			System.out.println("0 - Sair");
 			System.out.println("-----------------------------------------");
 			System.out.println();
@@ -45,6 +47,13 @@ public class MenuConta {
 			case 5:
 				objetoClienteConta.InfoGeral();
 				break;
+			case 6:
+				objetoClienteConta.transfereConta();
+				break;
+				
+			case 7:
+				objetoClienteConta.transfereConta2();
+				break;	
 
 			default:
 				break;
