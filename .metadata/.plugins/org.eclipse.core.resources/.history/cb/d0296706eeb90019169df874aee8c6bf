@@ -1,0 +1,17 @@
+package exRetangulo;
+
+public class ClienteRetangulo {
+	
+	private int larguraR;
+	private int alturaR;
+	
+	public void setarBaseAltura() {
+		System.out.println("Digite a altura do retangulo: ");
+		if(alturaR >= 1 || alturaR <= 20) {
+			this.alturaR = alturaR;
+		}else {
+			System.out.println("O intervalo da largura tem que estar entre 0 e 20");
+		}
+		
+	}
+}

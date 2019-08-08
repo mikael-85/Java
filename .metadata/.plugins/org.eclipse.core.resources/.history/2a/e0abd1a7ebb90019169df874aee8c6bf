@@ -1,0 +1,30 @@
+package exRetangulo;
+
+public class Retangulo {
+private int altura;
+private int largura;
+
+void setAltura(int altura) {
+	this.altura = altura;
+} 
+
+void setLargura(int largura) {
+	this.largura = largura;
+}
+
+public int getAltura() {
+	return altura;
+}
+
+public int getLargura() {
+	return largura;
+}
+
+public int areaRetangulo() {
+	return (altura*largura);
+}
+
+public int perimetroRetangulo() {
+	return (largura*altura)^2;
+}
+}

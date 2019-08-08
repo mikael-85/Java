@@ -1,0 +1,36 @@
+package exRetangulo;
+
+public class ClienteRetangulo {
+	
+	private int larguraR;
+	private int alturaR;
+	Retangulo r1 = new Retangulo();
+	
+	public void setarBaseAltura() {// arrumar
+		
+		System.out.println("Digite a altura do retangulo: ");
+		if((alturaR >= 1) || (alturaR <= 20)) {
+			r1.setAltura(alturaR);
+		}else {
+			System.out.println("Digite a largura do retangulo: ");
+
+			if((larguraR >= 1) || (larguraR <= 20)) {
+				r1.setLargura(larguraR);
+			}else {
+				System.out.println("O intervalo da largura tem que estar entre 0 e 20");
+			}
+		}
+	}
+	
+	public void CalculoareaRetangulo() {
+		System.out.println("A area do retangulo é: " + r1.areaRetangulo());
+	}
+	
+	public void CalculoPerimetroTriangulo() {
+		System.out.println("O perimetro do retangulo é: " + r1.perimetroRetangulo());
+	}
+	
+	public void imprimirRetangulo() {
+		r1.displayRetangulo();
+	}
+}

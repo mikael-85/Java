@@ -1,0 +1,47 @@
+package exRetangulo;
+
+public class Retangulo {
+private int altura;
+private int largura;
+
+void setAltura(int altura) {
+	if(largura >= 1 || largura <= 20) {
+		this.altura = altura;
+	}else {
+		System.out.println("O intervalo da largura tem que estar entre 0 e 20");
+	}
+	
+} 
+
+void setLargura(int largura) {
+	if(largura >= 1 || largura <= 20) {
+		this.largura = largura;
+	}else {
+		System.out.println("O intervalo da largura tem que estar entre 0 e 20");
+	}
+}
+
+public int getAltura() {
+	return altura;
+}
+
+public int getLargura() {
+	return largura;
+}
+
+public int areaRetangulo() {
+	
+	return (altura*largura);
+}
+
+public int perimetroRetangulo() {
+	return (largura+altura)*2;
+}
+
+public void displayRetangulo() {
+	System.out.println();
+	System.out.println("O retangulo tem largura: " +this.largura + ", e altura: " +this.altura+ ", "
+			+ "com perimetro de: "+this.perimetroRetangulo()+", e area de: "+ this.areaRetangulo());
+}
+
+}
