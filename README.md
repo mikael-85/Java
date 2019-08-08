@@ -1,7 +1,11 @@
 # Java
 
-* Exercicios de aula
+## Exercicios de aula
+
+* Classes, atributos e métodos
+* Collections
 * Herança
+* Polimorfismo
 * Daos 
 
 Atualizando...
