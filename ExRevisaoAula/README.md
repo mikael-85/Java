@@ -30,7 +30,7 @@
 
 **3.1 Crie métodos get e set para cada um destes atributos e certifique-se que as faixas de valores estão entre as permitidas para cada um deles.** 
 
-**3.2 Crie uma classe de exemplo para Tempo.
+**3.2 Crie uma classe de exemplo para Tempo.**
 
 ### 4. Modifique a classe Tempo para que o tempo seja contado em segundos a partir da meia noite. 
 
@@ -41,8 +41,8 @@
 – incrementarSegundos(int nr);
 – incrementarMinutos(int nr);
 – incrementarHoras(int nr);
-• Após o incremento, a classe tempo deve estar em um estado consistente.
-• Forneça também um método toString(), que mostre o valor da hora como uma String
+- Após o incremento, a classe tempo deve estar em um estado consistente.
+- Forneça também um método toString(), que mostre o valor da hora como uma String
 
 ### 7. Crie uma classe para manter os dados de um professor. Devem ser mantidos os seguintes dados: 
 
@@ -75,7 +75,7 @@
 - turno,
 - ingressantes por ano.
 
-### 10.Crie uma classe que mantenha os dados de uma disciplina de graduação.
+### 10. Crie uma classe que mantenha os dados de uma disciplina de graduação.
 
 **São necessários os seguintes dados:** 
 
