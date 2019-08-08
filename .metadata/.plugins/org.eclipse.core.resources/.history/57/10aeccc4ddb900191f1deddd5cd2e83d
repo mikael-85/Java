@@ -1,0 +1,13 @@
+package exConta;
+
+public class ContaCelular {
+	private double saldo;
+	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	void double getSaldo() {
+		return saldo;
+	}
+}

@@ -12,6 +12,8 @@ public class ClienteConta {
 	private String contaTransf;
 	Conta c1 = new Conta();
 	Conta c2 = new Conta();
+	ContaCelular cc1 = new ContaCelular();
+	ContaCelular cc2 = new ContaCelular();
 	private Integer contaSelec = -1;//para o switch
 
 	public void criarConta() {
@@ -113,15 +115,78 @@ public class ClienteConta {
 
 		}
 	}
+	
+	void efetuarPagamento() {
+		System.out.println("-----------------------");
+		System.out.println("Selecione a conta: ");
+		System.out.println("1 - Conta 1");
+		System.out.println("2 - Conta 2 ");
+		System.out.println("-----------------------");
+		contaSelec = entrada.nextInt();
+		if (contaSelec == 1 ) {
+			System.out.println("Digite o valor do pagamento: ");
+			valor = entrada.nextDouble();
+			c1.sacar(valor);
+		}else{
+			if(contaSelec == 2) {
+				System.out.println("Digite o valor do pagamento");
+				valor = entrada.nextDouble();
+				c2.sacar(valor);
+			}else {
+				System.out.println("Numero de conta invalido!");
+			}		
+
+		}
+	}
 
 	void verSaldo() {
-		System.out.println("Saldo da conta "+c1.getNomeConta() +": " +c1.getSaldo());
-		System.out.println("Saldo da conta "+c2.getNomeConta() +": " +c2.getSaldo());
+		System.out.println("-----------------------");
+		System.out.println("Selecione a conta: ");
+		System.out.println("1 - Conta 1");
+		System.out.println("2 - Conta 2 ");
+		System.out.println("-----------------------");
+		contaSelec = entrada.nextInt();
+		if (contaSelec == 1 ) {
+			System.out.println("Saldo da conta "+c1.getNomeConta() +": " +c1.getSaldo());
+		}else{
+			if(contaSelec == 2) {
+				System.out.println("Saldo da conta "+c2.getNomeConta() +": " +c2.getSaldo());
+			}else {
+				System.out.println("Numero de conta invalido!");
+			}		
+		}
 	}
 
 	void InfoGeral() {
 		c1.displayConta();
+		cc1.displayContaCelular();
+		
 		c2.displayConta();
+		cc2.displayContaCelular();
+	}
+	
+	void adicionarCreditos() {// fazendo
+		System.out.println("-----------------------");
+		System.out.println("Selecione a conta para retida do valor dos creditos: ");
+		System.out.println("1 - Conta 1");
+		System.out.println("2 - Conta 2 ");
+		System.out.println("-----------------------");
+		contaSelec = entrada.nextInt();
+		if (contaSelec == 1 ) {
+			System.out.println("Digite o valor desejado de creditos para o celular: ");
+			valor = entrada.nextDouble();
+			c1.sacar(valor);
+			cc1.setSaldo(valor);
+		}else{
+			if(contaSelec == 2) {
+				System.out.println("Digite o valor desejado de creditos para o celular: ");
+				valor = entrada.nextDouble();
+				c2.sacar(valor);
+				cc2.setSaldo(valor);
+			}else {
+				System.out.println("Numero de conta invalido!");
+			}		
+		}
 	}
 
 	void transfereConta(){ //c1 para c2

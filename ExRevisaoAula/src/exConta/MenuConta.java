@@ -22,6 +22,8 @@ public class MenuConta {
 			System.out.println("5 - Informacao Geral da conta");
 			System.out.println("6 - Transferencia entre conta 1 e conta 2");
 			System.out.println("7 - Transferencia entre conta 2 e conta 1");
+			System.out.println("8 - Efetuar pagamento");
+			System.out.println("9 - Adicionar creditos no celular");
 			System.out.println("0 - Sair");
 			System.out.println("-----------------------------------------");
 			System.out.println();
@@ -53,8 +55,14 @@ public class MenuConta {
 				
 			case 7:
 				objetoClienteConta.transfereConta2();
+				break;
+			case 8:
+				objetoClienteConta.efetuarPagamento();
 				break;	
-
+			case 9:
+				objetoClienteConta.adicionarCreditos();
+				break;		
+			
 			default:
 				break;
 
