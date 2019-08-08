@@ -85,7 +85,7 @@ public class ClienteConta {
 		entrada.nextLine(); // buffer
 		System.out.println("Digite o valor a ser transferido: ");
 		valor = entrada.nextDouble();
-		c2.transfere(c1, valor);// ok
+		c2.transfere(c1, valor);
 	}
 	
 }
