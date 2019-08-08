@@ -6,7 +6,7 @@
 
 **1.1 Modifique a classe Conta de forma a adicionar os seguintes atributos:**
 - Agencia;
-- Número da Conta;
+- Número da Conta; 
 *Exemplifique o uso destes atributos.*
 
 **1.2 Modifique a classe Conta de forma a adicionar os seguintes métodos:**
