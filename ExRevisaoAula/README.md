@@ -26,15 +26,28 @@
 *Escreva um programa para testar a classe Retangulo.*
 
 
-### 3. Crie uma classe Tempo que guarde as horas, minutos e segundos em atributos separados. 
+### 3. Crie uma classe: 
 
-**3.1 Crie métodos get e set para cada um destes atributos e certifique-se que as faixas de valores estão entre as permitidas para cada um deles.** 
+- Tempo 
+
+*Que guarde:*  
+
+- horas, 
+- minutos 
+- segundos 
+
+*em atributos separados.* 
+
+**3.1 Crie métodos:**
+- get e set para cada um destes atributos. 
+
+*e certifique-se que as faixas de valores estão entre as permitidas para cada um deles.* 
 
 **3.2 Crie uma classe de exemplo para Tempo.**
 
 ### 4. Modifique a classe Tempo para que o tempo seja contado em segundos a partir da meia noite. 
 
-**Mantenha os mesmos métodos get e set. Veja como a classe de exemplo não precisa ser mudada.**
+*Mantenha os mesmos métodos get e set. Veja como a classe de exemplo não precisa ser mudada.*
 
 ### 5. Modifique a classe Tempo de forma que existam os seguintes métodos:
 
