@@ -1,6 +1,6 @@
 ## Revisão de exercicios de aula 
 
-### Casses métodos e atribulos
+### CLASSES, MÉTODOS E ATRIBUTOS
 
 ### 1. Exercicio de conta:
 
