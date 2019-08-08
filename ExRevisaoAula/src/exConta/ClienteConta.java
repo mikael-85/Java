@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class ClienteConta {
 	Scanner entrada = new Scanner (System.in); 
 
-	//Conta objetoConta = new Conta();
 	private int nAgencia;
 	private int nConta;
 	private String nomeConta;
@@ -14,7 +13,7 @@ public class ClienteConta {
 	Conta c2 = new Conta();
 	ContaCelular cc1 = new ContaCelular();
 	ContaCelular cc2 = new ContaCelular();
-	private Integer contaSelec = -1;//para o switch
+	private Integer contaSelec = -1; //para o switch
 
 	public void criarConta() {
 		System.out.println("Inserindo dados da primeira conta: ");
@@ -24,9 +23,6 @@ public class ClienteConta {
 		nConta = entrada.nextInt();
 		System.out.println("Digite o valor de abertura de conta: ");
 		valor = entrada.nextDouble();
-
-		//System.out.println("Digite o nome: ");
-		//nomeConta = entrada.nextLine();
 
 		c1.setNumeroAgencia(nAgencia);
 		c1.setNumeroConta(nConta);
@@ -52,10 +48,9 @@ public class ClienteConta {
 		System.out.println();
 		System.out.println("Conta Criada, exibindo informacoes...: ");
 		c2.displayConta();
-
 	}
 
-	void depositar() {
+	public void depositar() {
 		System.out.println("-----------------------");
 		System.out.println("Selecione a conta: ");
 		System.out.println("1 - Conta 1");
@@ -92,8 +87,7 @@ public class ClienteConta {
 	 			break	*/
 	}	
 
-
-	void sacar() { // alterar para duas contas
+	public void sacar() { // alterar para duas contas
 		System.out.println("-----------------------");
 		System.out.println("Selecione a conta: ");
 		System.out.println("1 - Conta 1");
@@ -112,11 +106,10 @@ public class ClienteConta {
 			}else {
 				System.out.println("Numero de conta invalido!");
 			}		
-
 		}
 	}
-	
-	void efetuarPagamento() {
+
+	public void efetuarPagamento() {
 		System.out.println("-----------------------");
 		System.out.println("Selecione a conta: ");
 		System.out.println("1 - Conta 1");
@@ -135,11 +128,10 @@ public class ClienteConta {
 			}else {
 				System.out.println("Numero de conta invalido!");
 			}		
-
 		}
 	}
 
-	void verSaldo() {
+	public void verSaldo() {
 		System.out.println("-----------------------");
 		System.out.println("Selecione a conta: ");
 		System.out.println("1 - Conta 1");
@@ -157,15 +149,15 @@ public class ClienteConta {
 		}
 	}
 
-	void InfoGeral() {
+	public void InfoGeral() {
 		c1.displayConta();
 		cc1.displayContaCelular();
-		
+
 		c2.displayConta();
 		cc2.displayContaCelular();
 	}
-	
-	void adicionarCreditos() {// fazendo
+
+	public void adicionarCreditos() {
 		System.out.println("-----------------------");
 		System.out.println("Selecione a conta para retida do valor dos creditos: ");
 		System.out.println("1 - Conta 1");
@@ -188,19 +180,28 @@ public class ClienteConta {
 			}		
 		}
 	}
-
-	void transfereConta(){ //c1 para c2
-		entrada.nextLine(); // buffer
-		System.out.println("Digite o valor a ser transferido: ");
-		valor = entrada.nextDouble();
-		c1.transfere(c2, valor);
+	
+	public void transfereContaUltima() {
+		System.out.println("-----------------------");
+		System.out.println("Selecione a opção de transferencia: ");
+		System.out.println("1 - Conta 1 para Conta 2");
+		System.out.println("2 - Conta 2 para Conta 1");
+		System.out.println("-----------------------");
+		contaSelec = entrada.nextInt();
+		if (contaSelec == 1 ) {
+			System.out.println("Digite o valor a ser transferido: ");
+			valor = entrada.nextDouble();
+			c1.sacar(valor);
+			c2.deposita(valor);
+		}else{
+			if(contaSelec == 2) {
+				System.out.println("Digite o valor a ser transferido: ");
+				valor = entrada.nextDouble();
+				c2.sacar(valor);
+				c1.deposita(valor);
+			}else {
+				System.out.println("Numero de conta invalido!");
+			}		
+		}
 	}
-
-	void transfereConta2(){ //c2 para c1
-		entrada.nextLine(); // buffer
-		System.out.println("Digite o valor a ser transferido: ");
-		valor = entrada.nextDouble();
-		c2.transfere(c1, valor);
-	}
-
 }

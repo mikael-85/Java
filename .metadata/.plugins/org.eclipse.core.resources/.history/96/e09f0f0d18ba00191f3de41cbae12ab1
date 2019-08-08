@@ -11,7 +11,7 @@ public class ContaCelular {
 		return saldo;
 	}
 	
-	public void displayContaCelular(){
+	public void displayContaCelular(){// fazendo
 		System.out.println();
 		System.out.println("Saldo de creditos: " + this.getSaldo());
 	}

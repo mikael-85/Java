@@ -20,10 +20,9 @@ public class MenuConta {
 			System.out.println("3 - Sacar");
 			System.out.println("4 - Ver Saldo");
 			System.out.println("5 - Informacao Geral da conta");
-			System.out.println("6 - Transferencia entre conta 1 e conta 2");
-			System.out.println("7 - Transferencia entre conta 2 e conta 1");
-			System.out.println("8 - Efetuar pagamento");
-			System.out.println("9 - Adicionar creditos no celular");
+			System.out.println("6 - Transferencia entre contas");
+			System.out.println("7 - Efetuar pagamento");
+			System.out.println("8 - Adicionar creditos no celular");
 			System.out.println("0 - Sair");
 			System.out.println("-----------------------------------------");
 			System.out.println();
@@ -50,32 +49,20 @@ public class MenuConta {
 				objetoClienteConta.InfoGeral();
 				break;
 			case 6:
-				objetoClienteConta.transfereConta();
+				objetoClienteConta.transfereContaUltima();
 				break;
 				
 			case 7:
-				objetoClienteConta.transfereConta2();
+				objetoClienteConta.efetuarPagamento();
 				break;
 			case 8:
-				objetoClienteConta.efetuarPagamento();
-				break;	
-			case 9:
 				objetoClienteConta.adicionarCreditos();
-				break;		
-			
-			default:
+				break;	
+			default: //Quando nao escolhido nenhum case volta a opcao padrao
 				break;
-
 			}
-			//break;
-			//default: //Quando nao escolhido nenhum case volta a opcao padrao 
-			//break;
 		}
-		
 		entrada.close();
-
-	
 	}
-
 }
 
