@@ -30,7 +30,7 @@
 
 - Tempo 
 
-*Que guarde:*  
+*Que guarde:*
 
 - horas, 
 - minutos 
