@@ -107,8 +107,8 @@
 
 **Métodos:**
 
--ligar(): mostra a mensagem "Veiculo ligado".
--desligar(): mesma mensagem anterior trocando o "ligado" pelo "desligado".
+- ligar(): mostra a mensagem "Veiculo ligado".
+- desligar(): mesma mensagem anterior trocando o "ligado" pelo "desligado".
 
 ### 2. Crie duas subclasses: Moto e Carro. Para cada uma delas, exemplifique o uso dos atributos marca, modelos e dos métodos ligar() e desligar().
 
