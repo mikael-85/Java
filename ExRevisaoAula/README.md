@@ -95,3 +95,22 @@
 - código, 
 - nome, 
 - pré-requisitos.
+
+### Herança 
+
+### 1. Crie uma classe Veiculo com os seguntes métodos e atrivutos: 
+
+**Atributos:
+
+- marca do veiculo
+- modelo do veiculo
+
+**Métodos:
+
+-ligar(): mostra a mensagem "Veiculo ligado".
+-desligar(): mesma mensagem anterior trocando o "ligado" pelo "desligado".
+
+### 2. Crie duas subclasses: Moto e Carro. Para cada uma delas, exemplifique o uso dos atributos marca, modelos e dos métodos ligar() e desligar().
+
+
+### 3. Para a classe Moto defina o atributo numeroRodas. Para a classe carro defina o atributo tamanhoPortaMala. Exemplifique o uso desses atributos.
